@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;1,700&display=swap" rel="stylesheet">
@@ -10,14 +10,6 @@
   <link rel="stylesheet" href="style.css">
   <script src="index.js" defer></script>
   <title>Rock, Paper, Scissors</title>
-
-  
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -55,10 +47,12 @@
     </main>
 
     
-
+    <div class="rules-modal" id="modal">
+      <img src="./images/image-rules.svg" alt="rules">
+      <button id="close"><img src="./images/icon-close.svg" alt="close"></button>
+    </div>
     
-
-    <button class="btn-rules">Rules</button>
+    <button class="btn-rules" id="open">Rules</button>
   </div>
 
   <div class="selection" id="selection">
@@ -70,8 +64,8 @@
         </span>
       </button>
     </div>
-    <div>
-      <p class="big-text">You <span id="win">Win</span></p>
+    <div class="go-down">
+      <p class="big-text">You <span id="winner">win</span></p>
       <button class="btn" id="reset">Play again</button>
     </div>
     <div>
@@ -87,10 +81,8 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/AnnieCat73">Annie Indreiten</a>
   </div>
-  <div></div>
 
-  
 </body>
 </html>
