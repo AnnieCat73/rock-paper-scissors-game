@@ -88,7 +88,7 @@ function updateSelection(selectionEl, choice) {
 
   //update the img
   const img = selectionEl.querySelector('img');
-  console.log(img);
+  
   selectionEl.classList.add(`btn-${choice}`);
   img.src = `./images/icon-${choice}.svg`;
   img.alt = choice;
